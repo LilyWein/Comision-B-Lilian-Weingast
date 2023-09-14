@@ -1,7 +1,7 @@
 import { TaskModel } from "../models/Tasks.js";
 
 // controlador para mostrar la vista
-export const ctrlView = async (req, res) => {
+export const ctrlViewTask = async (req, res) => {
     try {
         const tasks = await TaskModel.findAll();
         res.render('tasks.ejs', {tasks})
@@ -16,7 +16,7 @@ export const ctrlView = async (req, res) => {
 }
 
 //controlador para traer todas las tareas
-export const ctrlGetTasks = async (req, res) => {
+export const ctrlGetTask = async (req, res) => {
     try {
         const task = await TaskModel.findAll();
         if (!task) return res.status(404)
