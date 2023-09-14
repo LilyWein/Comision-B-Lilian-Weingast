@@ -4,8 +4,7 @@ import { TaskModel } from "../models/Tasks.js";
 export const ctrlView = async (req, res) => {
     try {
         const tasks = await TaskModel.findAll();
-        const response = await fetch("http://localhost:3000/api/tasks");
-        res.render('tasks', {tasks})
+        res.render('index.ejs', {tasks})
 
     } catch (error) {
         console.error(error)
