@@ -35,6 +35,10 @@ app.listen(port,() => {
     startDb()
 })
 
+app.get('/', (req, res) =>{ 
+    res.render('tasks');
+})
+
 
 //app.listen(port, () => {
     //console.log('servidor listo')
