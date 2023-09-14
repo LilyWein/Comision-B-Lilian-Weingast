@@ -33,7 +33,9 @@ app.use('/', taskRouter)
 app.listen(port,() => {
     console.log(`server listening http://localhost:${port}`)
     startDb()
-} )
+})
+
+
 //app.listen(port, () => {
     //console.log('servidor listo')
     //app.listen(port, () => {

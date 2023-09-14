@@ -1,0 +1,47 @@
+* {
+    font-family: 'Bitter', serif;
+    box-sizing: border-box;
+   } 
+   
+ body {
+    margin: 0 0;
+    background-color:#eee8bd;
+   }
+ 
+ ul {
+   padding: 0;
+ }
+ input{
+  color: rgb(213, 190, 168) ;
+ }
+
+ h1, .h1 {
+    font-size: xx-large;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    color:rgb(57, 45, 7); /*se cambio color de fondo y tipografia*/
+    margin-right: 1rem;
+  }
+
+.card-img-top{
+    height: 250px;
+    object-fit: cover;
+}
+
+#btn-new {
+    font-size: medium;
+    color:rgb(69, 37, 10);
+    text-decoration-color: rgb(69, 37, 10);
+    background-color: rgb(189, 154, 122);
+    border-color:#d3d0bc;;
+    border-style: outset;
+    margin-bottom: 1%;
+}
+.card-body {
+    background-color: #ffe3c1; /* cambie color*/
+    border: 0.5px solid rgb(58, 43, 4); /* cambie color*/
+    margin:0%;
+    
+   
+   }

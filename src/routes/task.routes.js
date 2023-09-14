@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { ctrlCreateTask, ctrlDeleteTask, ctrlGetTask, ctrlUpdateTask, ctrlViewTask } from "../controllers/task.controllers.js";
+import { ctrlCreateTask, ctrlDeleteTask, ctrlGetTask, ctrlUpdateTask, ctrlView} from "../controllers/task.controllers.js";
 import { createTaskSchema, editTaskSchema } from "../models/schemas/task.schemas.js";
 import { validator } from "../middlewares/validator.js"
 import { TaskModel } from "../models/Tasks.js";
@@ -7,7 +7,7 @@ import { TaskModel } from "../models/Tasks.js";
 const taskRouter = Router();
 
 //RUTA PARA LA VISTA
-taskRouter.get('/api/tasks', ctrlViewTask)
+taskRouter.get('/tasks', ctrlView)
 
 // endpoint para traer todas las tareas
 taskRouter.get('/api/tasks', ctrlGetTask)

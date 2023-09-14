@@ -1,7 +1,7 @@
 import { TaskModel } from "../models/Tasks.js";
 
 // controlador para mostrar la vista
-export const ctrlViewTask = async (req, res) => {
+export const ctrlView = async (req, res) => {
     try {
         const tasks = await TaskModel.findAll();
         res.render('tasks.ejs', {tasks})
