@@ -1,10 +1,12 @@
 import { Router } from "express";
-import { ctrlCreateTask, ctrlDeleteTask, ctrlGetTask, ctrlUpdateTask, ctrlView} from "../controllers/task.controllers.js";
+import { ctrlViewIndex, ctrlCreateTask, ctrlDeleteTask, ctrlGetTask, ctrlUpdateTask, ctrlView} from "../controllers/task.controllers.js";
 import { createTaskSchema, editTaskSchema } from "../models/schemas/task.schemas.js";
 import { validator } from "../middlewares/validator.js"
 import { TaskModel } from "../models/Tasks.js";
 
 const taskRouter = Router();
+
+taskRouter.get('/',ctrlViewIndex)
 
 //RUTA PARA LA VISTA
 taskRouter.get('/tasks', ctrlView)
